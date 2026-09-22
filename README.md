@@ -1,4 +1,4 @@
-<img src="assets/java-port-scanner-logo.svg">
+<img src="assets/java-port-scanner-logo.svg" style="width: clamp(256px, 50%, 512px);">
 
 # Java Port Scanner
 
