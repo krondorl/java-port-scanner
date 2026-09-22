@@ -7,9 +7,56 @@ Java library and CLI tool for port scanning.
 ## Tech Stack
 
 - Java 25
-- virtual threads
+- picocli
+
+## Features
+
+- Virtual threads
+- Compatible with both IPv4 and IPv6
+- CLI parameters
+- Cancellable search
+- Starting port number
+- Ending port number
 
 ## Usage and Docs
+
+Inside the repo root folder use these commands:
+
+1. `mvn clean package`
+1. `java -jar target/port-scanner.jar --host localhost --start-port 5170 --end-port 5180`
+
+Use parameters accordingly (host, start-port, end-port).
+
+## CLI Screen Example
+
+```bash
+> mvn clean package
+
+[INFO] ----------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ----------------------------------------
+[INFO] Total time:  1.846 s
+[INFO] Finished at: 2026-09-22T17:23:03+02:00
+[INFO] ----------------------------------------
+
+> java -jar target/port-scanner.jar --host localhost --start-port 5170 --end-port 5180
+
+scanning ports...
+Finished scanning ports!
+Results 11
+
+Port 5170 -> CLOSED
+Port 5171 -> CLOSED
+Port 5172 -> CLOSED
+Port 5173 -> OPEN
+Port 5174 -> CLOSED
+Port 5175 -> CLOSED
+Port 5176 -> CLOSED
+Port 5177 -> CLOSED
+Port 5178 -> CLOSED
+Port 5179 -> CLOSED
+Port 5180 -> CLOSED
+```
 
 ## Resources
 
