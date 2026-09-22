@@ -7,6 +7,7 @@ Java library and CLI tool for port scanning.
 ## Tech Stack
 
 - Java 25
+- Apache Maven 3.9.16
 - picocli
 
 ## Features
@@ -15,8 +16,10 @@ Java library and CLI tool for port scanning.
 - Compatible with both IPv4 and IPv6
 - CLI parameters
 - Cancellable search
+- Host name
 - Starting port number
 - Ending port number
+- Timeout
 
 ## Usage and Docs
 
@@ -39,7 +42,7 @@ Use parameters accordingly (host, start-port, end-port).
 [INFO] Finished at: 2026-09-22T17:23:03+02:00
 [INFO] ----------------------------------------
 
-> java -jar target/port-scanner.jar --host localhost --start-port 5170 --end-port 5180
+> java -jar target/port-scanner.jar --host localhost --start-port 5170 --end-port 5180 --timeout 300
 
 scanning ports...
 Finished scanning ports!
